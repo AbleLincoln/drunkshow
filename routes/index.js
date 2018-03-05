@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const io = require('socket.io-client');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -7,8 +8,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/newdonation', function(req, res) {
-  console.log(req.body);
-  res.send('hey');
+  // io emit
+  res.io.emit('new donation', req.body);
+  // console.log(req.body);
+  res.send('Received');
 });
 
 router.get('/newdonation', function(req, res) {
