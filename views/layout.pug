@@ -4,6 +4,9 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    video(autoplay muted loop id="backgroundVideo")
+      source(src="../images/background.mp4" type="video/mp4")
+      
     block content
 
   script(src="/dist/app.bundle.js")
