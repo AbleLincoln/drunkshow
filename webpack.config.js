@@ -14,7 +14,7 @@ const styles = {
 
 module.exports = {
   entry: {
-    app: './public/javascripts/chefit.js'
+    app: './public/javascripts/drunkshow.js'
   },
   devtool: 'source-map',
   output: {
