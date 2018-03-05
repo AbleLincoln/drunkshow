@@ -1,6 +1,75 @@
 body
-  padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  font-family: sans-serif
 
-a
-  color: #00B7FF
+.overlay
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  height: 50vh
+  z-index: 100
+
+  background: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,1) 90%)
+  
+.donation
+  position: relative
+  width: 40vw
+  margin: 20px auto
+  padding: 15px
+
+  border: 2px solid #990000
+  border-radius: 10px
+  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.35)
+
+  &#newest
+    width: 50vw
+
+  &:not(#newest)
+    p.name
+      display: none
+
+    p.amount
+      font-size: 18px
+
+    p.memo
+      font-size: 22px
+
+
+  .profile
+    position: relative
+    width: 20%
+
+  img
+    width: 100%
+    border-radius: 10px
+    vertical-align: top
+    margin-right: 15px
+  
+  p
+    font-size: 18px
+    margin: 0
+
+    &.name
+      text-align: center
+      margin-top: 5px
+
+    &.amount
+      position: absolute
+      right: 25px
+      top: 50%
+      transform: translateY(-50%)
+
+      font-weight: 600
+      font-size: 20px
+      color: green
+
+    &.memo
+      position: absolute
+      left: 0
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+
+      text-align: center
+      font-weight: 600
+      font-size: 25px

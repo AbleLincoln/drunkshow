@@ -1,8 +1,61 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font-family: sans-serif; }
 
-a {
-  color: #00B7FF; }
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  z-index: 100;
+  background: linear-gradient(transparent, white 90%); }
+
+.donation {
+  position: relative;
+  width: 40vw;
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #990000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.35); }
+  .donation#newest {
+    width: 50vw; }
+  .donation:not(#newest) p.name {
+    display: none; }
+  .donation:not(#newest) p.amount {
+    font-size: 18px; }
+  .donation:not(#newest) p.memo {
+    font-size: 22px; }
+  .donation .profile {
+    position: relative;
+    width: 20%; }
+  .donation img {
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-right: 15px; }
+  .donation p {
+    font-size: 18px;
+    margin: 0; }
+    .donation p.name {
+      text-align: center;
+      margin-top: 5px; }
+    .donation p.amount {
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 600;
+      font-size: 20px;
+      color: green; }
+    .donation p.memo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      font-weight: 600;
+      font-size: 25px; }
 
 /*# sourceMappingURL=style.css.map */
