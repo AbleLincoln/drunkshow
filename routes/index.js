@@ -7,13 +7,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/newdonation', function(req, res) {
-  console.log(req);
+  console.log(req.body);
+  res.send('hey');
 });
 
 router.get('/newdonation', function(req, res) {
-  console.log(req);
+  console.log(req.body);
   
-  res.json(res);
+  // res.json(req.body);
   // res.show(JSON.stringify(req.body, null, 2));
 })
 
