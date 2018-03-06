@@ -1,5 +1,12 @@
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden; }
+
+#backgroundVideo {
+  width: 100%;
+  position: fixed; }
 
 .overlay {
   position: absolute;
@@ -10,11 +17,16 @@ body {
   z-index: 100;
   background: linear-gradient(transparent, white 90%); }
 
+.donations {
+  padding-top: 25vh; }
+
 .donation {
   position: relative;
   width: 40vw;
-  margin: 20px auto;
+  margin: auto;
+  margin-bottom: 20px;
   padding: 15px;
+  background-color: white;
   border: 2px solid #990000;
   border-radius: 10px;
   box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.35); }
@@ -30,7 +42,7 @@ body {
     position: relative;
     width: 20%; }
   .donation img {
-    width: 100%;
+    width: 20%;
     border-radius: 10px;
     vertical-align: top;
     margin-right: 15px; }
@@ -39,7 +51,8 @@ body {
     margin: 0; }
     .donation p.name {
       text-align: center;
-      margin-top: 5px; }
+      margin-top: 5px;
+      display: inline-block; }
     .donation p.amount {
       position: absolute;
       right: 25px;
