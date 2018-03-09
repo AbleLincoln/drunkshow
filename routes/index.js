@@ -5,6 +5,7 @@ const io = require('socket.io-client');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
+  // res.json('/dist/data.json');
 });
 
 router.post('/newdonation', function(req, res) {

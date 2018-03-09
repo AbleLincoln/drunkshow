@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: "Times New Roman";
   margin: 0;
   height: 100vh;
   overflow: hidden; }
@@ -31,7 +31,16 @@ body {
   border-radius: 10px;
   box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.35); }
   .donation#newest {
-    width: 50vw; }
+    width: 50vw;
+    animation-name: bounce;
+    animation-duration: 8s;
+    z-index: 100000; }
+
+@keyframes bounce {
+  17%, 22%, 28%, 33%, 38%, 43%, 48%, 53%, 58%, 63%, 68%, 73%, 78%, 83%, 88%, 93% {
+    transform: scale(1.75); }
+  8%, 16%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95% {
+    transform: scale(1.5); } }
   .donation:not(#newest) p.name {
     display: none; }
   .donation:not(#newest) p.amount {
@@ -70,5 +79,8 @@ body {
       text-align: center;
       font-weight: 600;
       font-size: 25px; }
+
+#bm {
+  position: absolute; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 body
-  font-family: sans-serif
+  font-family: "Times New Roman"
   margin: 0
   height: 100vh
   overflow: hidden
@@ -35,6 +35,23 @@ body
 
   &#newest
     width: 50vw
+    animation-name: bounce
+    animation-duration: 8s
+    z-index: 100000
+
+  @keyframes bounce
+    17%, 22%, 28%, 33%, 38%, 43%, 48%, 53%, 58%, 63%, 68%, 73%, 78%, 83%, 88%, 93%
+      transform: scale(1.75)
+    8%, 16%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%
+      transform: scale(1.5)
+  // 0%
+  //   transform: scale(200%)
+  // 20%, 40%, 60%, 80%
+  //   transform: scale(200%)
+  // 100%
+  //   transform: scale(100%)
+  // 10%, 30%, 50%, 70%, 90%
+  //   transform: translateY(150%)
 
   &:not(#newest)
     p.name
@@ -86,3 +103,6 @@ body
       text-align: center
       font-weight: 600
       font-size: 25px
+
+#bm
+  position: absolute
