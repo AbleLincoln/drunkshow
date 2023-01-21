@@ -13,7 +13,9 @@ var app = express();
 
 // Socket.io
 var server = require('http').Server(app);
-var io = require('socket.io')(server);
+var io = require('socket.io')(server, {
+  allowEIO3: true
+});
 
 app.use(function(req, res, next){
   res.io = io;
